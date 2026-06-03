@@ -1,0 +1,154 @@
+
+nav {
+  background-color: #0b3244;
+  padding: 20px;
+  text-align: center;
+}
+nav a {
+  color: white;
+  margin: 0 20px;
+  font-weight: 20px;
+  font-size: 20px;
+  transition: 0.3s;
+}
+nav a:hover {
+  text-decoration: underline;
+  color: #95ceed;
+  border-bottom: 2px solid #0f1f27;
+}
+body {
+  text-align: center;
+  background: linear-gradient(#98c4d5,#b1c0ca,#98c4d5);
+  color: rgb(14, 64, 106);
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+.container {
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  background-color: rgba(106, 154, 164, 0.834);
+  border-radius: 12px;
+  border: 3px solid #193a4c;
+}
+.container:hover {
+  transform: scale(1.05);
+  transition: 0.65s;
+}
+.img {
+  border: 5px solid #252424;
+  padding: 10px;
+  width: 400;
+  height: auto;
+  border-radius: 50%;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgb(9, 85, 111);
+  transform: scale(1.05);
+  transition: 0.3s;
+
+}
+.image-container {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    gap: 20px; 
+}
+
+.image-container img {
+    max-width: 400px;
+    height: auto;
+}
+h1 {
+  font-size: 60px;
+  -webkit-text-stroke: 2px rgb(14, 64, 106); 
+  color: rgb(255, 255, 255);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+.byline {
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.gradient-link2{
+font-size:20px;
+font-weight:800;
+text-decoration:none;
+letter-spacing:1px;
+
+background:linear-gradient(
+90deg,
+hsl(197, 28%, 95%),
+#acfeff,
+#0cbcae,
+hsl(207, 100%, 96%)
+);
+
+background-size:200% auto;
+
+background-clip:text;
+-webkit-background-clip:text;
+color:transparent;
+
+animation:gradientFlow 4s linear infinite;
+}
+
+@keyframes gradientFlow{
+0%{background-position:0% center;}
+100%{background-position:200% center;}
+}
+
+.gradient-link2:hover{
+background:linear-gradient(
+90deg,
+#d5efe4,
+#087de3,
+hsl(218, 57%, 46%),
+#15c0db,
+#91d6cb
+);
+
+background-size:200% auto;
+
+background-clip:text;
+-webkit-background-clip:text;
+color:transparent;
+
+animation:gradientFlowHover 2s linear infinite;
+}
+
+@keyframes gradientFlowHover{
+0%{background-position:0% center;}
+100%{background-position:200% center;}
+}
+
+.gradient-link2:active{
+
+background-clip:text;
+-webkit-background-clip:text;
+color:transparent;
+
+animation:gradientRush .6s linear;
+}
+
+@keyframes gradientRush{
+0%{background-position:-200% center;}
+100%{background-position:200% center;}
+}
+
+ @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+.fadeInUp-animation {
+  animation: 3.5s fadeInUp;
+}
